@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Repository and Service layers
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <import resource="datasource-config.xml"/>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <context:component-scan
+            base-package="net.therap.service, net.therap.service"/>
+
+
+    <bean id="jpaVendorAdapter"
+          class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="database" value="HSQL"/>
+        <property name="showSql" value="true"/>
+        <property name="generateDdl" value="false"/>
+        <property name="databasePlatform"
+                  value="org.hibernate.dialect.HSQLDialect"/>
+    </bean>
+
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+        <property name="packagesToScan" value="net.therap.domain"/>
+    </bean>
+
+    <!-- Persistence Context Annotated -->
+    <bean
+            class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"
+            id="persistenceAnnotationBeanPostProcessor"/>
+
+    <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>
+
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+        <property name="jpaDialect" ref="jpaDialect"/>
+    </bean>
+
+
+</beans>
