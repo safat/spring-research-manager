@@ -21,10 +21,19 @@ import java.util.List;
 @Transactional
 public class UserService {
     @Autowired
-    @Qualifier ("userDaoJpa")
+    @Qualifier ("userDaoImpl")
     UserDao userDao;
 
-    public List<User> getUserList(){
-       return userDao.getUserList();
+    public List<User> getUserList() {
+        return userDao.getUserList();
+    }
+
+    public boolean isValidUser(User user) {
+        boolean isValidUser = false;
+        User retrievedUser = userDao.getUserById(user.getId());
+        if (retrievedUser != null && user.getPassword().equals(retrievedUser.getPassword())) {
+            isValidUser = true;
+        }
+        return isValidUser;
     }
 }

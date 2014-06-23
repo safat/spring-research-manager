@@ -13,4 +13,5 @@ import java.util.List;
  */
 public interface UserDao {
     public List<User> getUserList();
+    public User getUserById(int id);
 }

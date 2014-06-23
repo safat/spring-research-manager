@@ -1,50 +1,54 @@
 <web-app version="2.4"
 	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-	<display-name>Simple Research Center Manager</display-name>
+	<display-title>Simple Research Center Manager</display-title>
 
     <context-param>
-        <param-name>contextConfigLocation</param-name>
+        <param-title>contextConfigLocation</param-title>
         <param-value>classpath:spring/business-config.xml</param-value>
     </context-param>
 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
 
     <servlet>
-		<servlet-name>mvc-dispatcher</servlet-name>
+		<servlet-title>mvc-dispatcher</servlet-title>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
-            <param-name>contextConfigLocation</param-name>
+            <param-title>contextConfigLocation</param-title>
             <param-value>classpath:spring/mvc-core-config.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>mvc-dispatcher</servlet-name>
+		<servlet-title>mvc-dispatcher</servlet-title>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 
     <!-- Dandelion servlet definition and mapping -->
     <servlet>
-        <servlet-name>dandelionServlet</servlet-name>
+        <servlet-title>dandelionServlet</servlet-title>
         <servlet-class>com.github.dandelion.core.web.DandelionServlet</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>dandelionServlet</servlet-name>
+        <servlet-title>dandelionServlet</servlet-title>
         <url-pattern>/dandelion-assets/*</url-pattern>
     </servlet-mapping>
 
     <!-- Dandelion filter definition and mapping -->
     <filter>
-        <filter-name>dandelionFilter</filter-name>
+        <filter-title>dandelionFilter</filter-title>
         <filter-class>com.github.dandelion.core.web.DandelionFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>dandelionFilter</filter-name>
+        <filter-title>dandelionFilter</filter-title>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
