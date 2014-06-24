@@ -1,8 +1,10 @@
 package net.therap.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +15,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "project")
-public class Project {
+public class Project implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -33,6 +35,9 @@ public class Project {
 
     @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
     private List<Supervisor> supervisorList;
+
+    @ManyToMany(mappedBy = "projectSet", fetch = FetchType.EAGER)
+    private Set<Student> studentSet;
 
     public int getId() {
         return id;
@@ -80,6 +85,14 @@ public class Project {
 
     public void setSupervisorList(List<Supervisor> supervisorList) {
         this.supervisorList = supervisorList;
+    }
+
+    public Set<Student> getStudentSet() {
+        return studentSet;
+    }
+
+    public void setStudentSet(Set<Student> studentSet) {
+        this.studentSet = studentSet;
     }
 
     @Override

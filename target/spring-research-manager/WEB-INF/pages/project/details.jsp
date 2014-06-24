@@ -36,8 +36,15 @@
 <hr>
 <h5> Supervisors  </h5>
  <c:forEach var="supervisor" items="${project.getSupervisorList()}" >
- <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getDesignation()} xyz"> </c:out> </a> </br>
+ <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getFirstName()} "> </c:out> </a> </br>
  </c:forEach>
+
+<hr>
+<h5> Students  </h5>
+<c:forEach var="student" items="${project.getStudentSet()}" >
+    <a href="<c:out value="/supervisor/${student.getId()}"> </c:out>">  <c:out value="${student.getFirstName()} "> </c:out> </a> </br>
+</c:forEach>
+
 
 </body>
 </html>

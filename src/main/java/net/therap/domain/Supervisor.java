@@ -12,11 +12,7 @@ import java.util.List;
  */
 @Entity
 @Table(name = "supervisor")
-public class Supervisor {
-    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+public class Supervisor extends User{
 
     @Column(name = "designation")
     private String designation;
@@ -26,14 +22,6 @@ public class Supervisor {
             joinColumns = @JoinColumn (name = "supervisor_id"),
             inverseJoinColumns = @JoinColumn (name = "project_id"))
     private List<Project> projectList;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getDesignation() {
 
@@ -55,7 +43,6 @@ public class Supervisor {
     @Override
     public String toString() {
         return "Supervisor{" +
-                "id=" + id +
                 '}';
     }
 }

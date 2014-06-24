@@ -36,10 +36,10 @@ public class UserController {
         if(bindingResult.hasErrors()){
            return "user/addOrUpdateUser";
         }
-//      modelMap.addAttribute("user", user);
-//
+
        return "redirect:user/details/1";
     }
+
     @RequestMapping(value = "/details/{id}", method = RequestMethod.POST)
     public String getUserById(@RequestParam String id, ModelMap modelMap){
        return "user/userDetails";

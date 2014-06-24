@@ -17,10 +17,10 @@ import java.io.FileOutputStream;
 
 /**
  * Created with IntelliJ IDEA.
- * User: shakhawat.hossain
+ * @Author: shakhawat.hossain
  * Date: 6/23/14
  * Time: 3:38 PM
- * To change this template use File | Settings | File Templates.
+ *
  */
 @Controller
 @RequestMapping(value = "project")

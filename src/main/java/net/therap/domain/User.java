@@ -17,8 +17,7 @@ import java.util.Date;
  * Time: 9:33 AM
  *
  */
-@Entity
-@Table(name = "user")
+@MappedSuperclass
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,13 +51,6 @@ public class User {
     @Size(min=6, max=20,
             message="The password must be at least 6 characters long.")
     private String password;
-
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    @Column(name = "is_admin")
-    private boolean isAdmin;
 
     public User() {
     }
@@ -111,10 +103,6 @@ public class User {
         this.gender = gender;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -132,7 +120,7 @@ public class User {
                 "\nlastName='" + lastName + '\'' +
                 "\nemailAddress='" + email + '\'' +
                 "\ndateOfBirth='" + dateOfBirth + '\'' +
-                "\nadmin='" + isAdmin + '\'' +
+
                 "}\n";
     }
 
