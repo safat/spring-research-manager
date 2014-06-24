@@ -1,6 +1,11 @@
 package net.therap.service;
 
-import org.springframework.stereotype.Repository;
+import net.therap.dao.ProjectDao;
+import net.therap.domain.Project;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,7 +14,15 @@ import org.springframework.stereotype.Repository;
  * Time: 4:21 PM
  * To change this template use File | Settings | File Templates.
  */
-@Repository
+@Service
+@Transactional
 public class ProjectService {
 
+  @Autowired
+  @Qualifier("projectDaoJpa")
+  private ProjectDao projectDao;
+
+  public Project getProjectById(int projectId){
+      return projectDao.getProjectById(projectId);
+  }
 }

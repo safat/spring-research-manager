@@ -1,5 +1,6 @@
 package net.therap.controller;
 
+import net.therap.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LogoutController {
     @RequestMapping(value = "/logout")
     public String logout(ModelMap modelMap){
+      modelMap.addAttribute("user", new User());
       return "user/login";
     }
 }

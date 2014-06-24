@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * User: shakhawat.hossain
  * Date: 6/23/14
  * Time: 2:31 PM
- * To change this template use File | Settings | File Templates.
+ *
  */
 @Controller
 public class HomeController {

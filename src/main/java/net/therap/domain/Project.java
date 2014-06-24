@@ -2,6 +2,7 @@ package net.therap.domain;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,11 +25,14 @@ public class Project {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "startDate")
+    @Column(name = "start_date")
     private Date startDate;
 
-    @Column(name = "endDate")
+    @Column(name = "end_date")
     private Date endDate;
+
+    @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
+    private List<Supervisor> supervisorList;
 
     public int getId() {
         return id;
@@ -68,5 +72,25 @@ public class Project {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public List<Supervisor> getSupervisorList() {
+        return supervisorList;
+    }
+
+    public void setSupervisorList(List<Supervisor> supervisorList) {
+        this.supervisorList = supervisorList;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", supervisorList=" + supervisorList +
+                '}';
     }
 }

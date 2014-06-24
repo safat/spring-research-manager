@@ -5,7 +5,7 @@
     <artifactId>spring-research-manager</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <title>spring-research-manager</title>
+    <!--<title>spring-research-manager</title>-->
 
     <properties>
         <spring.version>4.0.5.RELEASE</spring.version>
@@ -106,6 +106,22 @@
             <artifactId>spring-aop</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <!-- Apache Commons Upload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+
+        <!-- Apache Commons Upload -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
 
         <!--<dependency>-->
             <!--<groupId>javax.validation</groupId>-->
