@@ -4,6 +4,7 @@ import net.therap.dao.SupervisorDao;
 import net.therap.domain.Project;
 import net.therap.domain.Supervisor;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -24,8 +25,10 @@ public class SupervisorDaoImpl implements SupervisorDao {
     private EntityManager entityManager;
 
     @Override
+    @Cacheable(value = "supervisorProjectCache")
     public List<Project> getProjectListBySupervisorId(int supervisorId) {
         Supervisor supervisor = entityManager.find(Supervisor.class, supervisorId);
+        System.out.println("\n\nSupervisorDao : getProjectListBySupervisorId ");
         return supervisor.getProjectList();
     }
 }
