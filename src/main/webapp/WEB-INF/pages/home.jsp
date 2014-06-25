@@ -12,7 +12,7 @@
 </head>
 <body>
 <a href="/logout">logout</a> </br>
- <a href="project/runningProjects/1000">running projects</a> </br>
+ <a href="project/runningProjects">running projects</a> </br>
  <a href="project/addProject">add a project</a>     </br>
 </body>
 </html>

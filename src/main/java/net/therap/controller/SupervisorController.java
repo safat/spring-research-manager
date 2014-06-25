@@ -28,7 +28,7 @@ public class SupervisorController {
     public String projectList(@PathVariable("id") int supervisorId, ModelMap modelMap){
         Collection<Project> projectList = supervisorService.getProjectListBySupervisorId(supervisorId);
         modelMap.addAttribute("projectList", projectList);
-//        System.out.println("project list : "+projectList.get(0).toString());
+        modelMap.addAttribute("title", "Research Projects");
         return "project/projectList";
     }
 

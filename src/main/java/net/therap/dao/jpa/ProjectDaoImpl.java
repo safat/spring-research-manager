@@ -3,6 +3,7 @@ package net.therap.dao.jpa;
 import net.therap.dao.ProjectDao;
 import net.therap.domain.Project;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

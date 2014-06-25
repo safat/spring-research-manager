@@ -17,5 +17,10 @@
         <property name="maxUploadSize" value="10000000"/>
     </bean>
 
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <!-- uses WebJars so Javascript and CSS libs can be declared as Maven dependencies (Bootstrap, jQuery...) -->
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+
 
 </beans>

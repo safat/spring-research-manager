@@ -3,7 +3,9 @@ package net.therap.dao.jpa;
 import net.therap.dao.SupervisorDao;
 import net.therap.domain.Project;
 import net.therap.domain.Supervisor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
@@ -24,11 +26,16 @@ public class SupervisorDaoImpl implements SupervisorDao {
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Autowired
+    public CacheManager cacheManager;
+
+
     @Override
-    @Cacheable(value = "supervisorProjectCache")
+    @Cacheable(value = "project" )
     public Collection<Project> getProjectListBySupervisorId(int supervisorId) {
         Supervisor supervisor = entityManager.find(Supervisor.class, supervisorId);
-        System.out.println("\n\nSupervisorDao : getProjectListBySupervisorId ");
+        System.out.println("\n\nSupervisorDao :cachebale method--> getProjectListBySupervisorId ");
+
         return supervisor.getProjectList();
     }
 }

@@ -14,7 +14,7 @@ public class LoginController {
     @Autowired
     UserService userService;
 
-    @RequestMapping (value = "/login", method = RequestMethod.GET)
+    @RequestMapping (value = "/", method = RequestMethod.GET)
     public String getLoginForm(ModelMap modelMap) {
         modelMap.addAttribute("user", new User());
         return "user/login";

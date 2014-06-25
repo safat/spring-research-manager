@@ -1,17 +1,25 @@
-<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="ehcache.xsd"
-         updateCheck="false">
-    <diskStore path="java.io.tmpdir"/>
+<?xml version='1.0' encoding='UTF-8'?>
+<ehcache xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='ehcache.xsd'>
+    <defaultCache eternal='true' timeToLiveSeconds="60" maxElementsInMemory='100' overflowToDisk='false'  />
 
-    <!-- objects are evicted from the cache every 120 seconds -->
-    <cache name="supervisorProjectCache"
+    <cache name='project'
            timeToLiveSeconds="120"
-           maxElementsInMemory="100"
+           maxElementsInMemory='10000'
+           eternal='false'
+           overflowToDisk='false'
+           maxElementsOnDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="1"
+           memoryStoreEvictionPolicy="LRU"
+            />
+
+    <cache name="singleStudent"
+           timeToLiveSeconds="300"
+           maxElementsInMemory="10"
            eternal="false"
            overflowToDisk="false"
-           maxElementsOnDisk="10000000"
+           maxElementsOnDisk="1000"
            diskPersistent="false"
            diskExpiryThreadIntervalSeconds="1"
            memoryStoreEvictionPolicy="LRU"/>
-
 </ehcache>

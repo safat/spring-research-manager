@@ -9,42 +9,56 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <html>
-<head>
-    <title></title>
-</head>
+<jsp:include page="../fragments/headTag.jsp"/>
 <body>
-<h4> Title : <c:out value="${project.getTitle()}"> </c:out> </h4>
-<div>
-    <h6> Description </h6>
- <p>
-     <c:out value="${project.getDescription()}"> </c:out>
- </p>
-</div>
+</br> </br> </br> </br>
+<div class="container">
 
-<div>
-    <h6> Start Date </h6>
-    <p>
-        <c:out value="${project.getStartDate()}"> </c:out>
-    </p>
-    <h6> End Date </h6>
-    <p>
-        <c:out value="${project.getEndDate()}"> </c:out>
-    </p>
-</div>
+    <dl class="dl-horizontal">
+        <dt>Title</dt>
+        <dd><c:out value="${project.getTitle()}"> </c:out></dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt>Description</dt>
+        <dd> <c:out value="${project.getDescription()}"> </c:out> </dd>
+    </dl>
+
+    <dl class="dl-horizontal">
+        <dt> Start Date </dt>
+        <dd> <c:out value="${project.getStartDate()}"> </c:out> </dd>
+    </dl>
 
 
-<hr>
-<h5> Supervisors  </h5>
- <c:forEach var="supervisor" items="${project.getSupervisorList()}" >
- <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getFirstName()} "> </c:out> </a> </br>
- </c:forEach>
+    <dl class="dl-horizontal">
+        <dt> End Date </dt>
+        <dd> <c:out value="${project.getEndDate()}"> </c:out> </dd>
+    </dl>
 
-<hr>
-<h5> Students  </h5>
-<c:forEach var="student" items="${project.getStudentSet()}" >
-    <a href="<c:out value="/supervisor/${student.getId()}"> </c:out>">  <c:out value="${student.getFirstName()} "> </c:out> </a> </br>
-</c:forEach>
+    <hr>
 
+    <dl class="dl-horizontal">
+        <dt>Supervisor(s) </dt>
+
+        <c:forEach var="supervisor" items="${project.getSupervisorList()}" >
+        <dd>
+            <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getFirstName()} "> </c:out> </a>
+        </dd>
+        </c:forEach>
+
+    </dl>
+
+
+    <dl class="dl-horizontal">
+
+        <dt>Student(s) </dt>
+        <c:forEach var="student" items="${project.getStudentSet()}" >
+             <dd>
+                 <a href="<c:out value="/supervisor/${student.getId()}"> </c:out>">  <c:out value="${student.getFirstName()} "> </c:out> </a> </br>
+             </dd>
+         </c:forEach>
+
+    </dl>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 package net.therap.dao.jpa;
 
 import net.therap.dao.UserDao;
+import net.therap.domain.Supervisor;
 import net.therap.domain.User;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
@@ -25,11 +26,11 @@ public class UserDaoImpl implements UserDao{
 
     @Override
     public List<User> getUserList(){
-        return entityManager.createQuery("FROM User").getResultList();
+        return entityManager.createQuery("FROM Supervisor").getResultList();
     }
 
     @Override
     public User getUserById(int id) {
-        return entityManager.find(User.class, id);
+        return entityManager.find(Supervisor.class, id);
     }
 }

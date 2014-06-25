@@ -16,6 +16,11 @@
         <webjars-jquery-ui.version>1.10.3</webjars-jquery-ui.version>
         <webjars-jquery.version>2.0.3-1</webjars-jquery.version>
         <dandelion.version>0.10.0</dandelion.version>
+
+        <!-- Logging -->
+        <logback.version>1.1.2</logback.version>
+        <slf4j.version>1.7.7</slf4j.version>
+
     </properties>
 
 
@@ -106,6 +111,22 @@
             <artifactId>spring-aop</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <!--logging-->
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
 
         <!--for ehcache-->
         <dependency>
