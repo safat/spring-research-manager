@@ -28,5 +28,13 @@ public class Student extends User{
     @JoinTable (name = "student_project",
             joinColumns = @JoinColumn (name = "student_id"),
             inverseJoinColumns = @JoinColumn (name = "project_id"))
-    private Set<Project> projectSet;
+    private Set<Project> projectList;
+
+    public Set<Project> getProjectList() {
+        return projectList;
+    }
+
+    public void setProjectList(Set<Project> projectList) {
+        this.projectList = projectList;
+    }
 }

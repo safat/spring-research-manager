@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,5 +27,11 @@ public class ProjectDaoImpl implements ProjectDao {
     @Override
     public Project getProjectById(int projectId) {
        return entityManager.find(Project.class, projectId);
+    }
+
+    @Override
+    public List<Project> getRunningProjects() {
+       Query query = entityManager.createQuery("FROM Project p WHERE p.endDate < CURRENT_DATE");
+       return query.getResultList();
     }
 }

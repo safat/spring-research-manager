@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  * User: shakhawat.hossain
@@ -21,8 +24,13 @@ public class ProjectService {
   @Autowired
   @Qualifier("projectDaoJpa")
   private ProjectDao projectDao;
+    private Set<Project> runningProjects;
 
-  public Project getProjectById(int projectId){
+    public Project getProjectById(int projectId){
       return projectDao.getProjectById(projectId);
   }
+
+    public List<Project> getRunningProjects() {
+        return projectDao.getRunningProjects();
+    }
 }

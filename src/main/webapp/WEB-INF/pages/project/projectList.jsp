@@ -13,7 +13,7 @@
     <title></title>
 </head>
 <body>
-<h3>project list by</h3>
+<h3><c:out value="${title}"> </c:out></h3>
 <hr>
 <table border="1">
     <tr>

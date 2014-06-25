@@ -32,7 +32,7 @@ public class UserController {
     @RequestMapping (value = "/add", method = RequestMethod.POST)
     public String addUser(@Valid User user, BindingResult bindingResult, ModelMap modelMap) {
         System.out.println(bindingResult.hasErrors()+" "+user.toString());
-
+        System.out.println("total erros : "+bindingResult.getFieldErrorCount());
         if(bindingResult.hasErrors()){
            return "user/addOrUpdateUser";
         }

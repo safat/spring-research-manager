@@ -2,15 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/dao/ProjectDao.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/dao/ProjectDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/ProjectDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/ProjectDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/service/ProjectService.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/service/ProjectService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/domain/Student.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/domain/Student.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/domain/Supervisor.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/domain/Supervisor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/domain/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/controller/SupervisorController.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/controller/SupervisorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/dao/SupervisorDao.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/dao/SupervisorDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/SupervisorDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/SupervisorDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/service/SupervisorService.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/service/SupervisorService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/details.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/details.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/business-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/business-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/mvc-core-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/mvc-core-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/mvc-view-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/mvc-view-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-research-manager.iml" afterPath="$PROJECT_DIR$/spring-research-manager.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/tools-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/tools-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spring-research-manager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,14 +31,14 @@
     <file path="/UserService.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403513401270" ignored="false" />
     <file path="/UserDao.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403512596972" ignored="false" />
     <file path="/HelloController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403431835816" ignored="false" />
-    <file path="/business-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403494826547" ignored="false" />
+    <file path="/business-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403673624470" ignored="false" />
     <file path="/web.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403598804767" ignored="false" />
     <file path="/mvc-core-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403507089907" ignored="false" />
     <file path="/mvc-view-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403499504241" ignored="false" />
     <file path="$PROJECT_DIR$/../spring-petclinic/src/main/webapp/WEB-INF/web.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403435562311" ignored="false" />
-    <file path="/UserController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403506862160" ignored="false" />
+    <file path="/UserController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403672480078" ignored="false" />
     <file path="/createUserForm.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403496811235" ignored="false" />
-    <file path="/Dummy.txt" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403601536378" ignored="false" />
+    <file path="/Dummy.txt" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403672528915" ignored="false" />
     <file path="/addOrUpdateUser.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403511226304" ignored="false" />
     <file path="/a.dummy" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403499043635" ignored="false" />
     <file path="/userDetails.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403500916422" ignored="false" />
@@ -40,25 +49,25 @@
     <file path="/HomeController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403512340063" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringDataSouceSample/src/main/java/net/therap/domain/Company.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403513890949" ignored="false" />
     <file path="/LogoutController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403585149676" ignored="false" />
-    <file path="/ProjectController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403607129697" ignored="false" />
-    <file path="/projectList.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403589752532" ignored="false" />
-    <file path="/ProjectDao.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403590178336" ignored="false" />
-    <file path="/Project.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403605749099" ignored="false" />
-    <file path="/ProjectService.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403590424911" ignored="false" />
+    <file path="/ProjectController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403673249528" ignored="false" />
+    <file path="/projectList.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403673289425" ignored="false" />
+    <file path="/ProjectDao.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403672789371" ignored="false" />
+    <file path="/Project.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403671761679" ignored="false" />
+    <file path="/ProjectService.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403672802094" ignored="false" />
     <file path="/addResearchPaperForm.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403582870790" ignored="false" />
     <file path="$PROJECT_DIR$/../SpringDataSouceSample/src/main/webapp/WEB-INF/web.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403579828618" ignored="false" />
     <file path="/fileUploadSuccess.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403583185570" ignored="false" />
-    <file path="/Supervisor.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403605019976" ignored="false" />
-    <file path="/SupervisorService.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403587438881" ignored="false" />
+    <file path="/Supervisor.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403671753330" ignored="false" />
+    <file path="/SupervisorService.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403670080932" ignored="false" />
     <file path="/SupervisorDao.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403586786940" ignored="false" />
-    <file path="/SupervisorDaoImpl.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403599721390" ignored="false" />
-    <file path="/SupervisorController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403588839394" ignored="false" />
+    <file path="/SupervisorDaoImpl.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403670043800" ignored="false" />
+    <file path="/SupervisorController.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403670097247" ignored="false" />
     <file path="/details.jsp" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403605824843" ignored="false" />
-    <file path="/ProjectDaoImpl.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403590434447" ignored="false" />
+    <file path="/ProjectDaoImpl.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403672782100" ignored="false" />
     <file path="/ehcache.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403599384391" ignored="false" />
     <file path="$PROJECT_DIR$/../spring-petclinic/src/main/resources/spring/tools-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403600908797" ignored="false" />
     <file path="/tools-config.xml" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403600720016" ignored="false" />
-    <file path="/Student.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403605686125" ignored="false" />
+    <file path="/Student.java" changelist="9468f94a-c5e0-4a60-88f5-d4e3bfdaf65f" time="1403671778094" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,30 +128,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Student.java">
+      <file leaf-file-name="StudentConroller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/StudentConroller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="35" selection-start="818" selection-end="828" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="details.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/details.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="23" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-23.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projectList.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="42" selection-start="0" selection-end="997" vertical-scroll-proportion="-14.916667">
+            <state line="9" column="29" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,7 +140,25 @@
       <file leaf-file-name="ProjectController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="10" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+            <state line="32" column="45" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projectList.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="5" selection-start="990" selection-end="990" vertical-scroll-proportion="-12.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="80" selection-start="1126" selection-end="1200" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,55 +166,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addResearchPaperForm.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/addResearchPaperForm.jsp">
+      <file leaf-file-name="business-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/business-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LoginController.java">
+      <file leaf-file-name="mvc-view-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/mvc-view-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="52" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
+            <state line="15" column="11" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/HomeController.java">
+      <file leaf-file-name="mvc-core-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/mvc-core-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="10" column="4" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java">
+      <file leaf-file-name="datasource-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/datasource-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="94" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.5487805">
+            <state line="5" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Supervisor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Supervisor.java">
+      <file leaf-file-name="tools-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/tools-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="67" selection-start="392" selection-end="667" vertical-scroll-proportion="0.0">
+            <state line="22" column="10" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="41" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -231,22 +238,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/cache/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/tools-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/service/ProjectService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/ProjectDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/ProjectDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/SupervisorDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/service/SupervisorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/SupervisorDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/SupervisorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/domain/Supervisor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/domain/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/details.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/ProjectDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/dao/ProjectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/business-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/mvc-core-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/mvc-view-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/tools-config.xml" />
       </list>
     </option>
   </component>
@@ -258,10 +265,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
-    <option name="y" value="24" />
-    <option name="width" value="1217" />
-    <option name="height" value="1000" />
+    <option name="x" value="62" />
+    <option name="y" value="-4" />
+    <option name="width" value="1219" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -986,8 +993,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="24" width="1217" height="1000" extended-state="6" />
-    <editor active="false" />
+    <frame x="62" y="-4" width="1219" height="1029" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -999,10 +1006,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38285714" sideWeight="0.49957156" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38285714" sideWeight="0.49957156" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24850042" sideWeight="0.67085713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2964867" sideWeight="0.61714286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1083,120 +1090,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/SupervisorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="17" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/cache/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/addOrUpdateUser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/user/userDetails.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Supervisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="67" selection-start="392" selection-end="667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="818" selection-end="828" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="14" column="20" selection-start="290" selection-end="297" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/domain/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="41" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+        <state line="37" column="39" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/addResearchPaperForm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/ProjectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="10" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/dao/jpa/ProjectDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="12" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="13" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/fileUploadSuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/details.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/StudentConroller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-23.875">
+        <state line="9" column="29" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/project/projectList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="42" selection-start="0" selection-end="997" vertical-scroll-proportion="-14.916667">
+        <state line="34" column="5" selection-start="990" selection-end="990" vertical-scroll-proportion="-12.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/ProjectController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="10" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="52" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+        <state line="32" column="45" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/therap/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="94" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.5487805">
+        <state line="34" column="80" selection-start="1126" selection-end="1200" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/business-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/datasource-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/mvc-core-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/mvc-view-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/tools-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

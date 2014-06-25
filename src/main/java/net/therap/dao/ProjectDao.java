@@ -2,6 +2,8 @@ package net.therap.dao;
 
 import net.therap.domain.Project;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: shakhawat.hossain
@@ -11,4 +13,5 @@ import net.therap.domain.Project;
  */
 public interface ProjectDao {
  public Project getProjectById(int projectId);
+ public List<Project> getRunningProjects();
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,7 +26,7 @@ public class SupervisorDaoImpl implements SupervisorDao {
 
     @Override
     @Cacheable(value = "supervisorProjectCache")
-    public List<Project> getProjectListBySupervisorId(int supervisorId) {
+    public Collection<Project> getProjectListBySupervisorId(int supervisorId) {
         Supervisor supervisor = entityManager.find(Supervisor.class, supervisorId);
         System.out.println("\n\nSupervisorDao : getProjectListBySupervisorId ");
         return supervisor.getProjectList();

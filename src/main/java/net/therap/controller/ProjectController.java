@@ -14,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -29,8 +30,11 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
 
-    @RequestMapping(value = "/runningProjects/{id}")
-    public String showProjectList(){
+    @RequestMapping(value = "/runningProjects")
+    public String showRunningProjectList(ModelMap modelMap){
+       List<Project> runningProjectList = projectService.getRunningProjects();
+       modelMap.addAttribute("title", "Running Projects");
+       modelMap.addAttribute("projectList", runningProjectList);
        return "project/projectList";
     }
 

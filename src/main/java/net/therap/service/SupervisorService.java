@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,7 +24,7 @@ public class SupervisorService {
     @Qualifier("supervisorDaoJpa")
     SupervisorDao supervisorDao;
 
-    public List<Project> getProjectListBySupervisorId(int supervisorId){
+    public Collection<Project> getProjectListBySupervisorId(int supervisorId){
       return supervisorDao.getProjectListBySupervisorId(supervisorId);
     }
 }

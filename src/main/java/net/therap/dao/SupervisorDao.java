@@ -2,7 +2,7 @@ package net.therap.dao;
 
 import net.therap.domain.Project;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,5 +12,5 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public interface SupervisorDao {
-    public List<Project> getProjectListBySupervisorId(int supervisorId);
+    public Collection<Project> getProjectListBySupervisorId(int supervisorId);
 }

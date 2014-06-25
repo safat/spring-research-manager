@@ -3,7 +3,6 @@ package net.therap.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Date;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -34,9 +33,9 @@ public class Project implements Serializable {
     private Date endDate;
 
     @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
-    private List<Supervisor> supervisorList;
+    private Set<Supervisor> supervisorList;
 
-    @ManyToMany(mappedBy = "projectSet", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
     private Set<Student> studentSet;
 
     public int getId() {
@@ -79,11 +78,11 @@ public class Project implements Serializable {
         this.endDate = endDate;
     }
 
-    public List<Supervisor> getSupervisorList() {
+    public Set<Supervisor> getSupervisorList() {
         return supervisorList;
     }
 
-    public void setSupervisorList(List<Supervisor> supervisorList) {
+    public void setSupervisorList(Set<Supervisor> supervisorList) {
         this.supervisorList = supervisorList;
     }
 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,7 +26,7 @@ public class SupervisorController {
 
     @RequestMapping(value = "/{id}/runningProjects", method = RequestMethod.GET)
     public String projectList(@PathVariable("id") int supervisorId, ModelMap modelMap){
-        List<Project> projectList = supervisorService.getProjectListBySupervisorId(supervisorId);
+        Collection<Project> projectList = supervisorService.getProjectListBySupervisorId(supervisorId);
         modelMap.addAttribute("projectList", projectList);
 //        System.out.println("project list : "+projectList.get(0).toString());
         return "project/projectList";

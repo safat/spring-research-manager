@@ -1,7 +1,7 @@
 package net.therap.domain;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,7 +21,7 @@ public class Supervisor extends User{
     @JoinTable (name = "supervisor_project",
             joinColumns = @JoinColumn (name = "supervisor_id"),
             inverseJoinColumns = @JoinColumn (name = "project_id"))
-    private List<Project> projectList;
+    private Set<Project> projectList;
 
     public String getDesignation() {
 
@@ -32,11 +32,11 @@ public class Supervisor extends User{
         this.designation = designation;
     }
 
-    public List<Project> getProjectList() {
+    public Set<Project> getProjectList() {
         return projectList;
     }
 
-    public void setProjectList(List<Project> projectList) {
+    public void setProjectList(Set<Project> projectList) {
         this.projectList = projectList;
     }
 
