@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.Collection;
 
 /**
@@ -33,9 +34,11 @@ public class SupervisorDaoImpl implements SupervisorDao {
     @Override
     @Cacheable(value = "project" )
     public Collection<Project> getProjectListBySupervisorId(int supervisorId) {
-        Supervisor supervisor = entityManager.find(Supervisor.class, supervisorId);
-        System.out.println("\n\nSupervisorDao :cachebale method--> getProjectListBySupervisorId ");
-
+//        Supervisor supervisor = entityManager.find(Supervisor.class, supervisorId);
+//        System.out.println("\n\nSupervisorDao :cachebale method--> getProjectListBySupervisorId ");
+        Query query = entityManager.createQuery("FROM Supervisor supervisor LEFT JOIN FETCH supervisor.projectList WHERE supervisor.id = :id");
+        query.setParameter("id", supervisorId);
+        Supervisor supervisor = (Supervisor) query.getSingleResult();
         return supervisor.getProjectList();
     }
 }

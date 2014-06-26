@@ -42,7 +42,7 @@
 
         <c:forEach var="supervisor" items="${project.getSupervisorList()}" >
         <dd>
-            <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getFirstName()} "> </c:out> </a>
+            <a href="<c:out value="/supervisor/${supervisor.getId()}"> </c:out>">  <c:out value="${supervisor.getDesignation()} "> </c:out>  <c:out value="${supervisor.getFirstName()} "> </c:out>   <c:out value="${supervisor.getLastName()} "> </c:out> </a>
         </dd>
         </c:forEach>
 
@@ -52,13 +52,15 @@
     <dl class="dl-horizontal">
 
         <dt>Student(s) </dt>
-        <c:forEach var="student" items="${project.getStudentSet()}" >
+        <c:forEach var="student" items="${project.getStudentList()}" >
              <dd>
-                 <a href="<c:out value="/supervisor/${student.getId()}"> </c:out>">  <c:out value="${student.getFirstName()} "> </c:out> </a> </br>
+                 <a href="<c:out value="/supervisor/${student.getId()}"> </c:out>">   <c:out value="${student.getFirstName()} "> </c:out> </a> </br>
              </dd>
          </c:forEach>
 
     </dl>
+
+    </div>
 
 </body>
 </html>

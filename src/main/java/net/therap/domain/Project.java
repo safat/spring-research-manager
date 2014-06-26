@@ -32,11 +32,11 @@ public class Project implements Serializable {
     @Column(name = "end_date")
     private Date endDate;
 
-    @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "projectList", fetch = FetchType.LAZY)
     private Set<Supervisor> supervisorList;
 
-    @ManyToMany(mappedBy = "projectList", fetch = FetchType.EAGER)
-    private Set<Student> studentSet;
+    @ManyToMany(mappedBy = "projectList", fetch = FetchType.LAZY)
+    private Set<Student> studentList;
 
     public int getId() {
         return id;
@@ -86,12 +86,12 @@ public class Project implements Serializable {
         this.supervisorList = supervisorList;
     }
 
-    public Set<Student> getStudentSet() {
-        return studentSet;
+    public Set<Student> getStudentList() {
+        return studentList;
     }
 
-    public void setStudentSet(Set<Student> studentSet) {
-        this.studentSet = studentSet;
+    public void setStudentList(Set<Student> studentList) {
+        this.studentList = studentList;
     }
 
     @Override
@@ -103,6 +103,8 @@ public class Project implements Serializable {
                 ", startDate=" + startDate +
                 ", endDate=" + endDate +
                 ", supervisorList=" + supervisorList +
+                ", studentList = " + studentList +
+
                 '}';
     }
 }

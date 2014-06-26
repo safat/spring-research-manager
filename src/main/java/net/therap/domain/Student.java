@@ -24,7 +24,7 @@ public class Student extends User{
     public void setProgram(String program) {
         this.program = program;
     }
-    @ManyToMany (targetEntity = Project.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany (targetEntity = Project.class, fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinTable (name = "student_project",
             joinColumns = @JoinColumn (name = "student_id"),
             inverseJoinColumns = @JoinColumn (name = "project_id"))
@@ -37,4 +37,5 @@ public class Student extends User{
     public void setProjectList(Set<Project> projectList) {
         this.projectList = projectList;
     }
+
 }

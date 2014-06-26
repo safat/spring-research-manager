@@ -14,4 +14,5 @@ import java.util.List;
 public interface ProjectDao {
  public Project getProjectById(int projectId);
  public List<Project> getRunningProjects();
+ public void updateProject(int projectId);
 }

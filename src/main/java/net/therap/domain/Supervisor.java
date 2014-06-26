@@ -17,7 +17,7 @@ public class Supervisor extends User{
     @Column(name = "designation")
     private String designation;
 
-    @ManyToMany (targetEntity = Project.class, fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany (targetEntity = Project.class, fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinTable (name = "supervisor_project",
             joinColumns = @JoinColumn (name = "supervisor_id"),
             inverseJoinColumns = @JoinColumn (name = "project_id"))
